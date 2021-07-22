@@ -1,23 +1,18 @@
 import React from "react";
 import {
-  Box,
-  Image,
   Text,
-  Link,
   HStack,
-  Center,
-  Heading,
   Switch,
   useColorMode,
   NativeBaseProvider,
   extendTheme,
-  VStack,
-  Code,
+  Square,
+  Box,
+  ScrollView,
 } from "native-base";
-import NativeBaseIcon from "./components/NativeBaseIcon";
-import 'react-native-gesture-handler';
-import {AppBar,Drawer} from './src/components';
-import { NavigationContainer } from '@react-navigation/native';
+import "react-native-gesture-handler";
+import { AppBar, Drawer, MasonaryLayout } from "./src/components";
+import { NavigationContainer } from "@react-navigation/native";
 // Define the config
 const config = {
   useSystemColorMode: false,
@@ -26,14 +21,60 @@ const config = {
 
 // extend the theme
 export const theme = extendTheme({ config });
+const CustomComp = ({ minH, props }: any) => {
+  return (
+    <Square bg="primary.400"
+    minH={minH}
+    >
+      <Box
+        _text={{
+          fontWeight: "bold",
+          fontSize: "lg",
+          color: "white",
+        }}
+        {...props}
+      >
+        20
+      </Box>
+    </Square>
+  );
+};
 
 export default function App() {
   return (
     <NativeBaseProvider>
-    <NavigationContainer>
-      <AppBar/>
-      <Drawer/>
-    </NavigationContainer>
+      <NavigationContainer>
+        <AppBar />
+        {/* <Drawer /> */}
+        <ScrollView
+          contentContainerStyle={{ width: "100%" }}
+          showsVerticalScrollIndicator={false}
+        >
+          <MasonaryLayout
+            column={[1, 1]}
+            _hStack={{
+              space: 4,
+              mb: 4,
+              pt: 8,
+            }}
+            _vStack={{ space: 4 }}
+          >
+            <CustomComp minH={32} />
+            <CustomComp minH={40} />
+            <CustomComp minH={48} />
+            <CustomComp minH={48} />
+            <CustomComp minH={32}/>
+            <CustomComp minH={40}/>
+            <CustomComp minH={40}/>
+            <CustomComp minH={40}/>
+            <CustomComp minH={32}/>
+            <CustomComp minH={32}/>
+            <CustomComp minH={40}/>
+            <CustomComp minH={40}/>
+            <CustomComp minH={24}/>
+          </MasonaryLayout>
+        </ScrollView>
+      </NavigationContainer>
     </NativeBaseProvider>
   );
 }
