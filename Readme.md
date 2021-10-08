@@ -1,6 +1,6 @@
 # Unsplash Community Wallpaper App
 
-This app aims at making a community that shares and maintains a wallpaper application that is open-sourced.
+This app aims at making a community that shares and maintains a wallpaper application that is open-sourced. This project is Participating in the on going Hacktoberfest 2021.
 
 # Hacktoberfest_2021
 Contributing to this project also counts towards the open-source contribution in Hacktoberfest 2021.
@@ -18,7 +18,6 @@ Make your first 4 Pull Requests and earn a free tee from GitHub!
    <img alt="GitHub stars" src="https://img.shields.io/github/stars/rayan1810/unsplash-community-wallpaper-app"></a>
    <img alt="Github license" src="https://img.shields.io/github/license/rayan1810/unsplash-community-wallpaper-app0"></a>
 </p>
-# Welcome to GitHub!
 
 ## This project is perfect for you to start with your hacktoberfest & open-source journey
 
