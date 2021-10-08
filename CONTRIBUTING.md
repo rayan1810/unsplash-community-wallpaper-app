@@ -1,20 +1,23 @@
+# Unsplash Community Wallpaper App
+
+This app aims at making a community that shares and maintains a wallpaper application that is open-sourced. This project is Participating in the on going Hacktoberfest 2021.
+
 # Hacktoberfest_2021
-A open source contribution  repository focused towards Hacktoberfest 2021
+Contributing to this project also counts towards the open-source contribution in Hacktoberfest 2021.
 
 # Star this Repo first
 
 Make your first 4 Pull Requests and earn a free tee from GitHub!
 
-![Hacktoberfest 2021](https://embed-fastly.wistia.com/deliveries/49bd387c40e2c5aada92abdf973bc46d.webp?image_crop_resized=960x540)
+![Hacktoberfest 2021](https://github.blog/wp-content/uploads/2021/10/hacktoberfest-2021-github-guide.png)
 
 
 <p align="center">
-   <img alt="GitHub issues" src="https://img.shields.io/github/issues/rayan1810//unsplash-community-wallpaper-app"></a>
+   <img alt="GitHub issues" src="https://img.shields.io/github/issues/rayan1810/unsplash-community-wallpaper-app"></a>
    <img alt="GitHub forks" src="https://img.shields.io/github/issues/rayan1810/unsplash-community-wallpaper-app"></a>
-   <img alt="GitHub stars" src="https://img.shields.io/github/stars/rayan1810//unsplash-community-wallpaper-app"></a>
-   <img alt="Github license" src="https://img.shields.io/github/license/rayan1810//unsplash-community-wallpaper-app0"></a>
+   <img alt="GitHub stars" src="https://img.shields.io/github/stars/rayan1810/unsplash-community-wallpaper-app"></a>
+   <img alt="Github license" src="https://img.shields.io/github/license/rayan1810/unsplash-community-wallpaper-app0"></a>
 </p>
-# Welcome to GitHub!
 
 ## This project is perfect for you to start with your hacktoberfest & open-source journey
 
@@ -23,19 +26,12 @@ Make your first 4 Pull Requests and earn a free tee from GitHub!
 - Fork this Repository using the button at the top
 - Clone your forked repository to your pc
 - Create a new branch for your modifications (ie. `git branch new-branch-name` and check it out `git checkout new-branch-name` and `git checkout -b new-branch-name`)`
-- Add your files (`git add -A`), commit (`git commit -m "appropriate commit message"`) and push (`git push origin new-branch-name`)
+- Pick an Issue from [GitHub issues](https://github.com/rayan1810/unsplash-community-wallpaper-app/issues) and add a comment tagging @rayan1810
+- Once that issue is assigned to you, you can start working on that issue and creating PR for the same.
 - Create a pull request
 - Star this repository
 
-#  Make your first Pull Request
-
-## Add any algorithm or anything you want share with folks around the world , for example you can write a html code that displays "I love open-source" in different languages.
-
-
-
-_Do not use special characters in the template above._
-
-## 4. Wait for Pull Request to merge
+## 4. Wait for Pull Request to merge or approved
 
 ## 5. Celebrate - you've done your first pull request!!
 
