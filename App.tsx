@@ -10,11 +10,16 @@ import {
   Box,
   ScrollView,
   StatusBar,
-  AspectRatio,
+  VStack,
   Image,
+  Pressable,
 } from "native-base";
-import "react-native-gesture-handler";
-import { AppBar, Drawer, MasonaryLayout } from "./src/components";
+import {
+  AppBar,
+  Drawer,
+  MasonaryLayout,
+  HomeScreenTile,
+} from "./src/components";
 import { NavigationContainer } from "@react-navigation/native";
 // Define the config
 const config = {
@@ -24,22 +29,6 @@ const config = {
 
 // extend the theme
 export const theme = extendTheme({ config });
-const CustomComp = ({ minH, props }: any) => {
-  return (
-    <Square bg="primary.400" minH={minH}>
-      <Box
-        _text={{
-          fontWeight: "bold",
-          fontSize: "lg",
-          color: "white",
-        }}
-        {...props}
-      >
-        Test
-      </Box>
-    </Square>
-  );
-};
 
 // Server API that returns Images details
 const imgData = [
@@ -289,6 +278,11 @@ export default function App() {
   return (
     <NativeBaseProvider>
       <NavigationContainer>
+        <StatusBar
+          translucent
+          backgroundColor="transparent"
+          barStyle="light-content"
+        />
         <AppBar />
         {/* <Drawer /> */}
         <ScrollView
@@ -298,21 +292,18 @@ export default function App() {
           <MasonaryLayout
             column={[1, 1]}
             _hStack={{
-              space: 4,
+              space: 2,
               mb: 4,
               pt: 8,
             }}
-            _vStack={{ space: 4 }}
+            _vStack={{ space: 2 }}
           >
             {imgData.map((img, ind) => {
               return (
-                <Image
-                  fallbackSource={{
-                    uri: "https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80",
-                  }}
-                  source={{ uri: img.url }}
-                  h={MasonaryLayoutItemHeights[ind % 5]}
-                  alt={img.name}
+                <HomeScreenTile
+                  MasonaryLayoutItemHeights={MasonaryLayoutItemHeights}
+                  ind={ind}
+                  img={img}
                 />
               );
             })}
