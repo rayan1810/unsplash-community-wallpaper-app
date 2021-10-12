@@ -21,6 +21,7 @@ import {
   HomeScreenTile,
 } from "./src/components";
 import { NavigationContainer } from "@react-navigation/native";
+import {WallpaperScreen} from "./src/screens";
 // Define the config
 const config = {
   useSystemColorMode: false,
@@ -283,32 +284,7 @@ export default function App() {
           backgroundColor="transparent"
           barStyle="light-content"
         />
-        <AppBar />
-        {/* <Drawer /> */}
-        <ScrollView
-          contentContainerStyle={{ width: "100%" }}
-          showsVerticalScrollIndicator={false}
-        >
-          <MasonaryLayout
-            column={[1, 1]}
-            _hStack={{
-              space: 2,
-              mb: 4,
-              pt: 8,
-            }}
-            _vStack={{ space: 2 }}
-          >
-            {imgData.map((img, ind) => {
-              return (
-                <HomeScreenTile
-                  MasonaryLayoutItemHeights={MasonaryLayoutItemHeights}
-                  ind={ind}
-                  img={img}
-                />
-              );
-            })}
-          </MasonaryLayout>
-        </ScrollView>
+        <WallpaperScreen/>
       </NavigationContainer>
     </NativeBaseProvider>
   );
