@@ -1,23 +1,14 @@
 import React from "react";
 import {
   Text,
-  HStack,
-  Switch,
-  useColorMode,
-  NativeBaseProvider,
-  extendTheme,
-  Square,
   Box,
-  ScrollView,
-  StatusBar,
   VStack,
   Image,
-  Pressable,
   Heading,
-  Button,
   Link,
+  Spacer,
+  Button,
 } from "native-base";
-import { NativeModules } from "react-native";
 
 export function WallpaperScreen() {
   return (
@@ -45,6 +36,8 @@ export function WallpaperScreen() {
           >
             View on Unsplash
           </Link>
+          <Spacer />
+          <Button>Set as Wallpaper</Button>
         </VStack>
       </VStack>
     </Box>
